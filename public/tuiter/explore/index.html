@@ -1,86 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../../vendors/bootswatch/bootstrap.min.css" rel="stylesheet"/>
+  <link href="index.css" rel="stylesheet"/>
+  <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+          integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+          crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>Explore screen</title>
+</head>
+<body>
+
+<div class="container" id="wd-explore"></div>
+<script src="index.js" type="module"></script>
+
+</body>
+</html>
+
+<!--
 <link href="index.css"
       rel="stylesheet"/>
-<div class = "wd-bg-color-canvas wd-padding-15px wd-border-thin
+<link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+<link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+
+<div class="row">
+  <div class="col-2 bg-dark text-white">
+    <div class="list-group bg-dark text-white">
+      <a href="index.html" class="list-group-item list-group-item-action">
+        <i class="fab fa-twitter fa-2x"></i><br/></a>
+      <a href="../home.html" class="list-group-item list-group-item-action">
+        <i class="fa-sharp fa-solid fa-house"></i>
+        Home</a>
+      <a href="index.html" class="list-group-item list-group-item-action active">
+        <i class="fa-solid fa-hashtag fa-2x"></i>
+        Explore</a>
+      <a href="../notifications.html" class="list-group-item list-group-item-action">
+        <i class="fa-solid fa-bell fa-2x"></i>
+        Notifications</a>
+      <a href="../messages.html" class="list-group-item list-group-item-action">
+        <i class="fa-solid fa-envelope fa-2x"></i>
+        Messages</a>
+      <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
+        <i class="fa-solid fa-bookmark fa-2x"></i>
+        Bookmarks</a>
+      <a href="../lists.html" class="list-group-item list-group-item-action">
+        <i class="fa-solid fa-list fa-2x"></i>
+        Lists</a>
+      <a href="../profile.html" class="list-group-item list-group-item-action">
+        <i class="fa-solid fa-user fa-2x"></i>
+        Profile</a>
+      <a href="../more.html" class="list-group-item list-group-item-action ">
+        <i class="fa-sharp fa-solid fa-circle-ellipsis fa-2x"></i>
+        More</a>
+    </div>
+  </div>
+
+  <div class="col-8 bg-dark text-white">
+    <div class = "wd-bg-color-canvas wd-padding-15px wd-border-thin
 wd-border-solid wd-border-gray">
-  <div class = "wd-padding-left">
-    <input class ="wd-float-left wd-rounded-corners-all wd-border-thin wd-border-solid
+      <div class = "wd-padding-left">
+        <input class ="wd-float-left wd-rounded-corners-all wd-border-thin wd-border-solid
    wd-border-blue wd-padding-5px wd-fg-color-white wd-bg-color-dark-gray wd-padding-left"
-           placeholder = "Search Tuiter">
-  <a href="explore-settings.html">
-    <img class="wd-dimension-30px wd-pos-relative-nudge-right-12px" src="C:\Users\TheSi\2022\fall\webdev\tuiter-react-web-app\public\tuiter\explore\images\gear.webp">
-  </a>
-  </div>
+               placeholder = "Search Tuiter">
+        <a href="explore-settings.html">
+          <img class="wd-dimension-30px wd-pos-relative-nudge-right-12px" src="C:\Users\TheSi\2022\fall\webdev\tuiter-react-web-app\public\tuiter\explore\images\gear.webp">
+        </a>
+      </div>
 
-<br/>
-  <div class="wd-float-left wd-bg-color-canvas wd-fg-color-highlighted wd-padding-16px">
-    For You
-  </div>
+      <br/>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">For You</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Trending</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Entertainment </a>
+        </li>
+      </ul>
+    </div>
 
-  <div class="wd-float-left wd-bg-color-canvas wd-fg-color-normal-text wd-padding-16px">
-    Trending
-  </div>
-  <div class="wd-float-left wd-bg-color-canvas wd-fg-color-normal-text wd-padding-16px">
-    COVID-19
-  </div>
-  <div class="wd-float-left wd-bg-color-canvas wd-fg-color-normal-text wd-padding-16px">
-    News
-  </div>
-  <div class="wd-float-left wd-bg-color-canvas wd-fg-color-normal-text wd-padding-16px">
-    Sports
-  </div>
-  <div class="wd-float-left wd-bg-color-canvas wd-fg-color-normal-text wd-padding-16px">
-    Entertainment
-  </div>
-  <br/>
-  <br/>
-  <br/>
-  <div class ="wd-pos-relative-nudge-right-15px
-  float-left wd-dimension-underline wd-bg-color-highlighted">
-   </div>
-</div>
-<div class="wd-bg-color-canvas wd-bg-color-canvas wd-padding-15px wd-border-thin
+    <div class="card" style="width: 30rem;">
+      <img src="../../images/starship.jpg"
+           class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="wd-fg-color-normal-text card-title">New Bridge just dropped</h5>
+      </div>
+    </div>
+
+    <div class="wd-bg-color-canvas wd-bg-color-canvas wd-padding-15px wd-border-thin
 wd-border-solid wd-border-gray">
-  <div class = "wd-fg-color-normal-text wd-padding-10px wd-fsize-13px">Treding in Science</div>
-  <div class = "wd-fg-color-white wd-pos-relative-nudge-right-15px">Jupiter</div>
-  <div class = "wd-fg-color-normal-text wd-padding-10px wd-fsize-13px">69.4K Tweets</div>
-  <div class = "wd-fg-color-normal-text wd-padding-10px wd-fsize-13px">Sports · Trending</div>
-  <div class = "wd-fg-color-white wd-pos-relative-nudge-right-15px">Goku</div>
-  <div class = "wd-fg-color-normal-text wd-padding-10px wd-fsize-13px">180.9K Tweets</div>
+      <div class = "wd-fg-color-normal-text wd-padding-10px wd-fsize-13px">Treding in Science</div>
+      <div class = "wd-fg-color-white wd-pos-relative-nudge-right-15px">Jupiter</div>
+      <div class = "wd-fg-color-normal-text wd-padding-10px wd-fsize-13px">69.4K Tweets</div>
+      <div class = "wd-fg-color-normal-text wd-padding-10px wd-fsize-13px">Sports · Trending</div>
+      <div class = "wd-fg-color-white wd-pos-relative-nudge-right-15px">Goku</div>
+      <div class = "wd-fg-color-normal-text wd-padding-10px wd-fsize-13px">180.9K Tweets</div>
 
-</div>
-<div class="wd-bg-color-canvas wd-bg-color-canvas wd-padding-15px wd-border-thin
+    </div>
+    <div class="wd-bg-color-canvas wd-bg-color-canvas wd-padding-15px wd-border-thin
 wd-border-solid wd-border-gray">
-  <div class = "wd-fg-color-white wd-padding-10px wd-fsize-13px">The New York Times</div>
+      <div class = "wd-fg-color-white wd-padding-10px wd-fsize-13px">The New York Times</div>
 
-  <div class = "wd-fg-color-white wd-pos-relative-nudge-right-15px">Studies show Joe Biden's
-    supporters more likely to play Doom Eternal on easy mode
-    <img class = "wd-pos-relative-nudge-right-12px wd-dimension-100px wd-rounded-corners-all-slight " src="C:\Users\TheSi\2022\fall\webdev\tuiter-react-web-app\public\tuiter\explore\images\news1.jpg">
-  </div>
-  <div class = "wd-fg-color-normal-text wd-padding-10px wd-fsize-13px">180.9K Tweets</div>
-  <div class = "wd-fg-color-white wd-padding-10px wd-fsize-13px">The Washington Post</div>
-  <div class = "wd-fg-color-white wd-pos-relative-nudge-right-15px">Putin announces plan to annex
-    China, Japan, and Korea
-    <img class = "wd-pos-relative-nudge-right-12px wd-dimension-100px wd-rounded-corners-all-slight " src="C:\Users\TheSi\2022\fall\webdev\tuiter-react-web-app\public\tuiter\explore\images\download.jpg">
-  </div>
-  <div class = "wd-fg-color-normal-text wd-padding-10px wd-fsize-13px">2.2K Tweets</div>
-</div>
-<div class="wd-bg-color-canvas wd-bg-color-canvas wd-padding-15px wd-border-thin
+      <div class = "wd-fg-color-white wd-pos-relative-nudge-right-15px">Studies show Joe Biden's
+        supporters more likely to play Doom Eternal on easy mode
+        <img class = "wd-pos-relative-nudge-right-12px wd-dimension-100px wd-rounded-corners-all-slight " src="C:\Users\TheSi\2022\fall\webdev\tuiter-react-web-app\public\tuiter\explore\images\news1.jpg">
+      </div>
+      <div class = "wd-fg-color-normal-text wd-padding-10px wd-fsize-13px">180.9K Tweets</div>
+      <div class = "wd-fg-color-white wd-padding-10px wd-fsize-13px">The Washington Post</div>
+      <div class = "wd-fg-color-white wd-pos-relative-nudge-right-15px">Putin announces plan to annex
+        China, Japan, and Korea
+        <img class = "wd-pos-relative-nudge-right-12px wd-dimension-100px wd-rounded-corners-all-slight " src="C:\Users\TheSi\2022\fall\webdev\tuiter-react-web-app\public\tuiter\explore\images\download.jpg">
+      </div>
+      <div class = "wd-fg-color-normal-text wd-padding-10px wd-fsize-13px">2.2K Tweets</div>
+    </div>
+    <div class="wd-bg-color-canvas wd-bg-color-canvas wd-padding-15px wd-border-thin
 wd-border-solid wd-border-gray">
-  <div class = "wd-fg-color-normal-text wd-padding-10px wd-fsize-13px">COVID-19 · LIVE</div>
-  <div class = "wd-fg-color-white wd-pos-relative-nudge-right-15px">COVID-19: News and updates
-  for Massachusets
-    <img class = "wd-pos-relative-nudge-right-12px wd-dimension-100px wd-rounded-corners-all-slight " src="C:\Users\TheSi\2022\fall\webdev\tuiter-react-web-app\public\tuiter\explore\images\news2.webp
+      <div class = "wd-fg-color-normal-text wd-padding-10px wd-fsize-13px">COVID-19 · LIVE</div>
+      <div class = "wd-fg-color-white wd-pos-relative-nudge-right-15px">COVID-19: News and updates
+        for Massachusets
+        <img class = "wd-pos-relative-nudge-right-12px wd-dimension-100px wd-rounded-corners-all-slight " src="C:\Users\TheSi\2022\fall\webdev\tuiter-react-web-app\public\tuiter\explore\images\news2.webp
   ">
-  </div>
-  <div class = "wd-fg-color-normal-text wd-padding-10px wd-fsize-13px">556.3K Tweets</div>
-  <div class = "wd-fg-color-normal-text wd-padding-10px wd-fsize-13px">Queen Elizabeth · LIVE</div>
-  <div class = "wd-fg-color-white wd-pos-relative-nudge-right-15px">Live updates on the late
-  Queen Elizabeth's funeral and future proceedings for the British Monarchy
-    <img class = "wd-pos-relative-nudge-right-12px wd-dimension-100px wd-rounded-corners-all-slight "
-         src="C:\Users\TheSi\2022\fall\webdev\tuiter-react-web-app\public\tuiter\explore\images\queen.jpg"
-    ></div>
-  <div class = "wd-fg-color-normal-text wd-padding-10px wd-fsize-13px">320.1K Tweets</div>
+      </div>
+      <div class = "wd-fg-color-normal-text wd-padding-10px wd-fsize-13px">556.3K Tweets</div>
+      <div class = "wd-fg-color-normal-text wd-padding-10px wd-fsize-13px">Queen Elizabeth · LIVE</div>
+      <div class = "wd-fg-color-white wd-pos-relative-nudge-right-15px">Live updates on the late
+        Queen Elizabeth's funeral and future proceedings for the British Monarchy
+        <img class = "wd-pos-relative-nudge-right-12px wd-dimension-100px wd-rounded-corners-all-slight "
+             src="C:\Users\TheSi\2022\fall\webdev\tuiter-react-web-app\public\tuiter\explore\images\queen.jpg"
+        ></div>
+      <div class = "wd-fg-color-normal-text wd-padding-10px wd-fsize-13px">320.1K Tweets</div>
 
+    </div>
+  </div>
+
+
+  <div class="col-2 bg-dark text-white">
+    <div class="list-group bg-dark text-white">
+      <a href="index.html" class="list-group-item list-group-item-action">
+
+        Who to follow</a>
+      <a href="index.html" class="list-group-item list-group-item-action">
+        <img class = "wd-dimension-30px"
+            src="C:\Users\TheSi\2022\fall\webdev\tuiter-react-web-app\public\tuiter\explore\images\java.png">
+        Java <i class="fa-solid fa-badge-check"></i><br/>
+        @Java</a>
+      <a href="index.html" class="list-group-item list-group-item-action">
+        <img class = "wd-dimension-30px"
+             src="C:\Users\TheSi\2022\fall\webdev\tuiter-react-web-app\public\tuiter\explore\images\rs.png">
+        Relativity Space <i class="fa-solid fa-badge-check"></i> <br/>
+        @relativityspace</a>
+      <a href="index.html" class="list-group-item list-group-item-action">
+        <img class = "wd-dimension-30px"
+             src="C:\Users\TheSi\2022\fall\webdev\tuiter-react-web-app\public\tuiter\explore\images\vg.png">
+        Virgin Galactic <i class="fa-solid fa-badge-check"></i> <br/>
+        @virgingalactic</a>
+      <a href="index.html" class="list-group-item list-group-item-action active">
+        <img class = "wd-dimension-30px"
+             src="C:\Users\TheSi\2022\fall\webdev\tuiter-react-web-app\public\tuiter\explore\images\nasa.png">
+        NASA <i class="fa-solid fa-badge-check"></i> <br/>
+        @NASA</a>
+      <a href="index.html" class="list-group-item list-group-item-action">
+        <img class = "wd-dimension-30px"
+             src="C:\Users\TheSi\2022\fall\webdev\tuiter-react-web-app\public\tuiter\explore\images\tesla.png">
+        Tesla <i class="fa-solid fa-badge-check"></i> <br/>
+        @Tesla</a>
+    </div>
+  </div>
 </div>
+
+-->
+
 
 
