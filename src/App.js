@@ -1,8 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Labs from "./labs";
+import HelloWorld from "./labs/a6/hello-world";
+import Tuiter from "./tuiter";
+import {BrowserRouter} from "react-router-dom";
+import {Routes, Route} from "react-router";
 
 function App() {
-  return (
+     return (
+          <BrowserRouter>
+               <div className = "container">
+                    <Routes>
+                    <Route index//path="/labs"
+                         element={<Labs/>}/>
+                    <Route path="/hello"
+                         element={<HelloWorld/>}/>
+                    <Route path="/tuiter"
+                         element={<Tuiter/>}/>
+                    </Routes>
+               </div>
+          </BrowserRouter>
+   );
+}
+export default App;
+
+
+
+
+/*
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,7 +42,4 @@ function App() {
         </a>
       </header>
     </div>
-  );
-}
-
-export default App;
+    */
